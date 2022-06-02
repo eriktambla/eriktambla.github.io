@@ -1,0 +1,96 @@
+:root{
+--light-orange: #ebcba5ff;
+--fern-green: #647945;
+--sweet-brown: #a43f3eff;
+--medium-turquoise: #63cccaff;
+--maximum-blue-purple: #beb7dfff;
+}
+
+@font-face {
+  font-family: cooperBlack;
+  src: url(Cooper\ Black\ Regular.ttf);
+}
+
+body {
+  background: var(--light-orange) !important;
+  font-family: cooperBlack !important;
+}
+
+.navbar {
+    background: var(--light-orange);
+    font-family: cooperBlack;
+    font-size: xx-large;
+    margin-top: 10px;
+}
+
+.navbar::after {
+    background-color: var(--sweet-brown); 
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 5px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,0);
+    width: 350px;
+}
+
+.nav-link,
+.nav-item,
+.navbar-brand {
+    color: var(--sweet-brown) !important/*not a good way to do it probably an issue with the default link styling*/;
+    cursor: pointer;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.nav-link:hover {
+  color: var(--light-orange) !important;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: var(--sweet-brown);
+}
+
+img {
+  width: 75%;
+  height: auto;
+}
+
+.container {
+  margin-top: 20px;
+  color: var(--sweet-brown);
+}
+
+.bi {
+  color: var(--sweet-brown);
+  margin-left: 45px;
+  margin-right: 45px;
+  cursor: pointer;
+}
+
+.bi:hover {
+  fill: none;
+  stroke: var(--sweet-brown);
+  stroke-width: 0.5px;
+}
+
+.boat {
+  border-style: solid;
+  border-width: 10px;
+  border-color: var(--sweet-brown);
+  margin: 50px;
+}
+
+#statement {
+  padding: 50px;
+  margin-top: 25%;
+}
+
+#statement h1 {
+  font-size: 100px;
+}
+
+#statement p {
+  margin-left: 15px;
+  margin-top: 30px;
+  font-size: 30px;
+}
